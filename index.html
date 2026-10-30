@@ -106,7 +106,9 @@
 
 
   //functions section-- playing settings section
-  
+    
+alert("🌸Sorry, but on Andriond and phones resuming is not available; you can try when it is ready🌸");
+    
   write.addEventListener("input", function () {
     h1.value = "🌸 " + write.value + " 🌸";
   });
@@ -130,7 +132,7 @@
   resume.addEventListener("click" , function () {
     resume.textContent = "resumed";
     pause.textContent = "pause";
-    alert("🌸Sorry, but on Andriond and phones resuming is not available; you can try when it is ready🌸");
+    speechSynthesis.resume();
   });
   // clear button 
   clearBtn.addEventListener("click", () => {
